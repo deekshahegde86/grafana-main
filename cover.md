@@ -1,4 +1,4 @@
-<h1 align="center">Prometheus Operator</h1>
+<h1 align="center">Grafana Operator</h1>
 
 ![Logo](_images/logo.PNG)
 
