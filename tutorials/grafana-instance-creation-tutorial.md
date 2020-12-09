@@ -55,7 +55,7 @@ grafana.integreatly.org/example-grafana created
 Get the associated Pods:
 
 ```execute
-kubectl get pods -n operators
+kubectl get pods -n my-grafana-operator
 ```
 
 You will be able to see the below output:
@@ -92,24 +92,7 @@ Execute below command to create Grafana Service
 ```execute
 kubectl create -f GrafanaService.yaml -n my-grafana-operator
 ```
-
-Now get the IP Address of the VM by executing the below command:
-
-```execute
-export ip_addr=$(ifconfig eth1 | grep inet | awk '{print $2}' | cut -f2 -d:)
-```
-
-See what is your VM IP Address:
-
-```execute
-echo $ip_addr
-```
-
-Now copy the output of the above command, paste in place of `$ip_addr` in the next command and you can access the service from your browser using the below link:
-
-```
-http://$ip_addr:30200
-```
+Click on the <a href="https://##DNS.ip##:30200" target="_blank">https://##DNS.ip##:30200</a> to access Grafana Dashboard from your browser.
 
 You will see the Grafana page loading as below :
 ![](../_images/load.png)
