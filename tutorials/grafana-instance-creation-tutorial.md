@@ -85,7 +85,7 @@ Execute below command to create Grafana Service
 ```execute
 kubectl create -f GrafanaService.yaml -n my-grafana-operator
 ```
-Click on the <a href="https://##DNS.ip##:30200" target="_blank">https://##DNS.ip##:30200</a> to access Grafana Dashboard from your browser.
+Click on the <a href="http://##DNS.ip##:30200" target="_blank">http://##DNS.ip##:30200</a> to access Grafana Dashboard from your browser.
 
 You will see the Grafana page loading as below :
 ![](_images/load.png)
