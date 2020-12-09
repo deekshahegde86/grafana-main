@@ -39,13 +39,6 @@ Execute below command to create Grafana instance
 ```execute
 kubectl create -f GrafanaInstance.yaml -n my-grafana-operator
 ```
-
-Get the associated Pods:
-
-```execute
-kubectl get pods -n my-grafana-operator
-```
-
 You will see the following resources to be created:
 
 ```output
@@ -95,19 +88,20 @@ kubectl create -f GrafanaService.yaml -n my-grafana-operator
 Click on the <a href="https://##DNS.ip##:30200" target="_blank">https://##DNS.ip##:30200</a> to access Grafana Dashboard from your browser.
 
 You will see the Grafana page loading as below :
-![](../_images/load.png)
+![](_images/load.png)
 
 Now click on the `Sign In` button as below :
-![](../_images/signin.png)
+![](_images/signin.png)
 
 You will now need to log in to Grafana Dashboard with the following credentials in the page below:
 ```
 user: root
 password: secret
 ```
-![](../_images/login.png)
+![](_images/login.png)
 
 Now you will be able to see the Dashboard like below:
 
-![](../_images/dashboard.png)
+![](_images/dashboard.png)
 
+This is a very basic example of creating Grafana Instance.You need to modify the instance and service as required by your application.
